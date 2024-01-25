@@ -11,7 +11,10 @@ body{
     position: fixed;
     left: 0px;
     right: 0px;
+    z-index: 2;
+    background-color: rgb(23 23 23);
 }
+
 .nav{
     display: flex;
     position: fixed;
@@ -20,6 +23,7 @@ body{
     top: 0%;
     align-items: center;
     justify-content: center;
+    opacity: 0.5;
 }
 .home,.edu,.res,.proj,.cont{
     position: relative;
@@ -27,23 +31,118 @@ body{
     color: white;
     outline: none;
     text-decoration: none;
+    z-index: 2;
 }
 .home:hover,.edu:hover,.res:hover,.proj:hover,.cont:hover{
     background-color: white;
     color: black;
+    border-radius: 10px;
+}
+#hompage{
+    padding: 10px;
 }
 #homepage{
-    position: absolute;
-    top:70px;
-    outline: solid;
+    position: relative;
+    margin-top:70px;
     border-radius: 25px;
     padding: 10px;
-    background-color: dimgray;
-    color: aliceblue;
-    display: flex;
-    left: 10%;
-    right: 10%;
+    outline: solid white 10px;
+    margin-right: 8%;
+    margin-left: 8%;
+    min-height: 600px;
+    background: linear-gradient(to top,pink 0%,pink 50%,paleturquoise 50%,paleturquoise 100%
+  );
 }
 .name{
     font-size:xx-large;
+    margin: 0px;
+    margin-top: 10px;
+    
+    
+}
+.photo{
+    border-radius: 400px; 
+    height: 350px;
+    outline: solid white 10px;  
+}
+.center,.pic{
+    float: right;
+    margin-right: 20px;
+    position: relative;
+}
+.about{
+    font-size: x-large;
+    font-weight: 800;
+    padding-right: auto;
+
+}
+.person{
+    display: flex;
+    flex-direction:column ;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-weight: 600;
+}
+#projpage{
+    position: relative;
+    top: 100px;
+    color: white;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    outline: solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#edupage{
+    margin-top: 150px;
+    padding-top: 50px;
+    position: relative;
+    margin-right: 8%;
+    margin-left: 8%;
+
+}
+
+.myline{
+    background-color: white;
+    height: 130px;
+    position: relative;
+    width: 5px;
+    left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: solid orange;
+}
+.mydot{
+    width:15px;
+    height:15px;
+    background: #D1D6E6;
+    border-radius: 400px;
+    position: relative;
+    outline: solid orange 4px;
+    z-index: 1;
+}
+.mycard{
+    position: relative;
+    background: white;
+    width:300px;
+    height: 150px;
+    margin-bottom: 20px;
+    transform:translateY(-520px);
+    left: 10%;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+.demo{
+    height: 600px;
 }
