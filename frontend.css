@@ -1,8 +1,15 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 body{
     background-color:rgb(23 23 23);
+    font-family: 'Poppins', sans-serif;
+    
+
 }
 .navbar{
     display: flex;
@@ -27,7 +34,7 @@ body{
 }
 .home,.edu,.res,.proj,.cont{
     position: relative;
-    padding: 15px 25px 20px 25px;
+    padding: 15px 20px 20px 20px;
     color: white;
     outline: none;
     text-decoration: none;
@@ -62,18 +69,19 @@ body{
 }
 .photo{
     border-radius: 400px; 
-    height: 350px;
+    height: 300px;
     outline: solid white 10px;  
 }
-.center,.pic{
+.pic{
     float: right;
-    margin-right: 20px;
+
+    margin-right: 10px;
+    margin-left: 15px;
     position: relative;
 }
 .about{
     font-size: x-large;
-    font-weight: 800;
-    padding-right: auto;
+    font-weight: 400;
 
 }
 .person{
@@ -81,7 +89,6 @@ body{
     flex-direction:column ;
     margin-left: 10%;
     margin-top: 10px;
-    font-weight: 600;
 }
 #projpage{
     position: relative;
@@ -109,40 +116,58 @@ body{
     position: relative;
     margin-right: 8%;
     margin-left: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
 .myline{
-    background-color: white;
-    height: 130px;
+    background-color: hsla(0,0%,45%,.25);
+    height: 150px;
     position: relative;
     width: 5px;
     left: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    outline: solid orange;
+    
+
 }
 .mydot{
     width:15px;
     height:15px;
-    background: #D1D6E6;
+    background: hsla(0,0%,100%,.8);
     border-radius: 400px;
     position: relative;
-    outline: solid orange 4px;
     z-index: 1;
 }
 .mycard{
     position: relative;
-    background: white;
-    width:300px;
-    height: 150px;
+    color: white;
+    width:350px;
+    height: 100px;
     margin-bottom: 20px;
-    transform:translateY(-520px);
-    left: 10%;
+    transform:translateY(-70px);
+    margin-left: 30px;
     border-radius: 10px;
     padding: 5px;
 
 }
 .demo{
-    height: 600px;
+    height: 650px;
+    margin-bottom: 10px;
+}
+.line1{
+    transform:translateY(-120px);
+}
+.line2{
+    
+    transform:translateY(-240px);
+}
+.line3{
+    
+    transform:translateY(-360px);
+}
+.mycard:hover{
+    padding-left: 20px;
 }
