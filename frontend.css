@@ -8,9 +8,8 @@ html{
 body{
     background-color:rgb(23 23 23);
     font-family: 'Poppins', sans-serif;
-    
-
 }
+
 .navbar{
     display: flex;
     padding: 25px;
@@ -32,7 +31,7 @@ body{
     justify-content: center;
     opacity: 0.5;
 }
-.home,.edu,.res,.proj,.cont{
+#home,#edu,#res,#proj,#cont{
     position: relative;
     padding: 15px 20px 20px 20px;
     color: white;
@@ -40,11 +39,18 @@ body{
     text-decoration: none;
     z-index: 2;
 }
-.home:hover,.edu:hover,.res:hover,.proj:hover,.cont:hover{
+@media screen and (max-width: 1200px) {
+    #home,#edu,#res,#proj,#cont{
+        padding: 10px 10px 10px 10px;
+        margin-top: 5px;
+    }
+}
+#home:hover,#edu:hover,#res:hover,#proj:hover,#cont:hover{
     background-color: white;
     color: black;
     border-radius: 10px;
 }
+
 #hompage{
     padding: 10px;
 }
@@ -54,12 +60,32 @@ body{
     border-radius: 25px;
     padding: 10px;
     outline: solid white 10px;
-    margin-right: 8%;
-    margin-left: 8%;
+    margin-right: 6%;
+    margin-left: 6%;
     min-height: 600px;
     background: linear-gradient(to top,pink 0%,pink 50%,paleturquoise 50%,paleturquoise 100%
   );
 }
+.person{
+    display: flex;
+    flex-direction:column ;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+@media screen and (max-width: 1200px) {
+    #homepage{
+        background:darkgray ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .person{
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+}
+
 .name{
     font-size:xx-large;
     margin: 0px;
@@ -76,7 +102,7 @@ body{
     float: right;
 
     margin-right: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
     position: relative;
 }
 .about{
@@ -84,12 +110,7 @@ body{
     font-weight: 400;
 
 }
-.person{
-    display: flex;
-    flex-direction:column ;
-    margin-left: 10%;
-    margin-top: 10px;
-}
+
 #projpage{
     position: relative;
     top: 100px;
@@ -118,7 +139,7 @@ body{
     margin-left: 8%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
 
 }
 
@@ -144,7 +165,7 @@ body{
 .mycard{
     position: relative;
     color: white;
-    width:350px;
+    width:250px;
     height: 100px;
     margin-bottom: 20px;
     transform:translateY(-70px);
