@@ -126,10 +126,15 @@ body{
     display: flex;
     flex-direction: column;
     width: 400px;
+    height: 300px;
     outline: solid;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    overflow: hidden;
+}
+ul{
+    margin: 0px;
 }
 #edupage{
     margin-top: 150px;
@@ -192,3 +197,35 @@ body{
 .mycard:hover{
     padding-left: 20px;
 }
+#respage{
+    margin-top: 20px;
+    left: 6%;
+    right: 6%;
+}
+.resumea{
+    height: 600px;
+    width: 400px;
+}
+.res-file{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.down{
+    outline: solid white;
+    text-decoration: none;
+    padding: 20px 60px 20px 60px;
+    background: white;
+    color: black;
+    margin-top: 50px;
+    transition: padding 2ms;
+}
+.down:hover{
+    background-color: black;
+    color: white;
+    padding: 25px 60px 20px 60px;
+}
+
+
