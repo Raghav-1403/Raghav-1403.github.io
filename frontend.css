@@ -234,7 +234,25 @@ ul{
     padding: 25px 60px 20px 60px;
 }
 #contpage{
-    left: 8%;
-    right: 8%;
+    
+    background: grey;
+    position: relative;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+    position:absolute;
+    left: 0%;
+    right: 0%;
 }
-
+a{
+    text-decoration: none;
+}
+.page{
+    color: black;
+    margin-right: 10px;
+}
