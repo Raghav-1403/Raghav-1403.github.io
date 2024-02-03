@@ -60,8 +60,8 @@ body{
     border-radius: 25px;
     padding: 10px;
     outline: solid white 10px;
-    margin-right: 6%;
-    margin-left: 6%;
+    margin-right: 4%;
+    margin-left: 4%;
     min-height: 600px;
     background: linear-gradient(to top,pink 0%,pink 50%,paleturquoise 50%,paleturquoise 100%
   );
