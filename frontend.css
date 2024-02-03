@@ -44,6 +44,12 @@ body{
         padding: 10px 5px 10px 5px;
         margin-top: 5px;
     }
+    #cont{
+        right: 0%;
+    }
+    #home{
+        left: 0%;
+    }
 }
 #home:hover,#edu:hover,#res:hover,#proj:hover,#cont:hover{
     background-color: white;
@@ -60,8 +66,8 @@ body{
     border-radius: 25px;
     padding: 10px;
     outline: solid white 10px;
-    margin-right: 4%;
-    margin-left: 4%;
+    margin-right: 3%;
+    margin-left: 3%;
     min-height: 600px;
     background: linear-gradient(to top,pink 0%,pink 50%,paleturquoise 50%,paleturquoise 100%
   );
@@ -170,7 +176,7 @@ ul{
 .mycard{
     position: relative;
     color: white;
-    width:250px;
+    min-width:150px;
     height: 100px;
     margin-bottom: 20px;
     transform:translateY(-70px);
@@ -204,7 +210,7 @@ ul{
 }
 .resumea{
     height: 600px;
-    width: 400px;
+    width: 330px;
 }
 .res-file{
     display: flex;
