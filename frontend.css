@@ -249,10 +249,9 @@ ul{
     left: 0%;
     right: 0%;
 }
-a{
-    text-decoration: none;
-}
+
 .page{
     color: black;
     margin-right: 10px;
+    text-decoration: none;
 }
